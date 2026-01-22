@@ -1,12 +1,11 @@
-// let sum = 5;
-// let start = 1;
+let sum = 5;
+let start = 1;
 
-// while (start < 21) {
+while (start < 21) {
 
-//     if (start % 2 != 0) {
-//         sum = sum + start
-//     }
-//     start++
-// }
+    if (start % 2 != 0) {
+        sum = sum + start
+    }
+    start++
+}
 
-// console.log(sum)
