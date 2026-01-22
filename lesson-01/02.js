@@ -6,6 +6,3 @@ while(start < 11) {
     start++
 };
 
-document.writeln(factorial)
-
-
