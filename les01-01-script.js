@@ -5,5 +5,3 @@ while(star < 21) {
     sum = sum + star
     star++
 }
-
-document.writeln(sum)
