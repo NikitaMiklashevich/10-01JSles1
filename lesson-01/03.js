@@ -1,4 +1,4 @@
-let sum = 5;
+let sum = 0;
 let start = 1;
 
 while (start < 21) {
