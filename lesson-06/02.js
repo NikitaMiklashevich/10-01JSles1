@@ -31,26 +31,28 @@ console.log(doubledNumbers) // Должен вывести: [2, 4, 6, 8, 10]
 */
 
 
-// const map = (array, callback) => {
-//     let newArr = [];
-//     for (let i = 0; i < array.length; i++) {
-//             newArr.push(callback(array[i], i))
-//     }
-//     return newArr
-// }
+const map = (array, callback) => {
+    let newArr = [];
+    for (let i = 0; i < array.length; i++) {
+            newArr.push(callback(array[i], i))
+    }
+    return newArr
+}
 
-// const numbers = [1, 2, 3, 4, 5]
+const numbers = [1, 2, 3, 4, 5]
 
-// const doubledNumbers = map(numbers, (element, index) => {
-//   return element * 2
-// })
+const doubledNumbers = map(numbers, (element, index) => {
+  return element * 2
+})
 
 // console.log(doubledNumbers)
 
-let numbers = [1, 2, 3, 4, 6]
-let doubledNumbers = numbers.map (num => num * 2)
 
 
 
 
-console.log(doubledNumbers)
+// let numbers = [1, 2, 3, 4, 6]
+// let doubledNumbers = numbers.map (num => num * 2)
+
+
+// console.log(doubledNumbers)
