@@ -30,3 +30,6 @@ const game = {
   }
 };
 
+
+game.addResource("wood", 30)
+console.log(game.resources)
