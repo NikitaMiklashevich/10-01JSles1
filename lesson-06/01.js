@@ -26,15 +26,15 @@ console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 
 
 
-const filter = (array, callback) => {
-  const res = []
-  for (let i = 0; i < array.length; i++) {
-    if (callback(array[i], i)) {
-      result.push(array[i]);
-    }
-  }
-  return res;
-};
+// const filter = (array, callback) => {
+//   const res = []
+//   for (let i = 0; i < array.length; i++) {
+//     if (callback(array[i], i)) {
+//       result.push(array[i]);
+//     }
+//   }
+//   return res;
+// };
 
 // let callback = (element, index) => element % 2 !== 0;
 // const index = [1,2,3,4,5,6];
@@ -45,15 +45,15 @@ const filter = (array, callback) => {
 
 
 
-// const filter = (array, callback) => {
-//   let newArr = [];
-//   for (let i = 0; i < array.length; i++) {
-//     if (callback(array[i], i)) {
-//       newArr.push(array[i])
-//     }
-//   }
-//   return newArr
-// }
+const filter = (array, callback) => {
+  let newArr = [];
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i], i)) {
+      newArr.push(array[i])
+    }
+  }
+  return newArr
+}
 
 
 
