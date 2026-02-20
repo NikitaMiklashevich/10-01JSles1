@@ -9,13 +9,15 @@
 * truncate("Короткая строка", 20) // Ожидаемый результат: "Короткая строка"
 */
 
-function truncate(str, maxLength) {
-    const readStr = str.split('').splice(0, maxLength)
-    if(readStr.length >= maxLength){
-        readStr.push('...')
+
+
+
+function truncate(str, maxlength) {
+    if (str.length > maxlength) {
+        return str.slice(0, maxlength) + "...";
     }
-    return readStr.join('')
+    return str;
 }
 
 
-// console.log(truncate("Вот, что мне действительно нравится в этом", 100));
+console.log(truncate("Вот, что мне действительно нравится в этом", 43));
