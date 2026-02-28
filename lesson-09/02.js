@@ -40,31 +40,28 @@ let timerId
 
 startButton.addEventListener('click', () => {
     if (!isTimerStarted) {
+        isTimerStarted = true
         let counter = 3
-        countdownDisplay.innerHTML = counter
-        timerId = setInterval(function print() {
+        countdownDisplay.textContent = `${counter}`
+        timerId = setInterval(() => {
             counter--
-            countdownDisplay.innerHTML = ' '
-            countdownDisplay.append(counter)
-
-            if (counter == 0) {
-                countdownDisplay.innerHTML = ' '
-                countdownDisplay.append('🚀')
+            countdownDisplay.textContent = `${counter}`
+            if (counter < 1) {
+                countdownDisplay.textContent = '🚀'
                 clearInterval(timerId)
                 isTimerStarted = false
             }
         }, 1000)
 
-    }    // your code
+    }
 })
 
 cancelButton.addEventListener('click', () => {
-    // your code
     if (timerId != undefined) {
-        countdownDisplay.innerHTML = 'Отменено'
-        clearInterval(timerId);
+        countdownDisplay.textContent = 'Отменено'
+        clearInterval(timerId)
         isTimerStarted = false
-        timerId != undefined
+        timerId = undefined
     }
 })
 
