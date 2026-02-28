@@ -40,8 +40,9 @@ let timerId
 
 startButton.addEventListener('click', () => {
     if (!isTimerStarted) {
+        isTimerStarted = true
         let counter = 3
-        countdownDisplay.innerHTML = counter
+        countdownDisplay.innerHTML = `${counter}`
         timerId = setInterval(function print() {
             counter--
             countdownDisplay.innerHTML = ' '
